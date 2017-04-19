@@ -1,8 +1,11 @@
 'use strict';
 
-const vk = new (require('vk-io'));
+const vk = new (require('vk-io'))
+const token = require('./token')
 
-vk.setToken('you group token here');
+console.log('🔑 Твой токен:', token)
+
+vk.setToken(token);
 
 vk.setOptions({
 	/* Optimize the number of requests per second  */
