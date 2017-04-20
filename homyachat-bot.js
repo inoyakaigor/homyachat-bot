@@ -15,6 +15,9 @@ vk.setOptions({
 vk.longpoll.start()
 .then(() => {
 	console.log('Long Poll started');
+})
+.catch((error) => {
+	console.error(error);
 });
 
 const regexReverse = /\/reverse (.+)/i;
